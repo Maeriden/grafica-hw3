@@ -1,0 +1,28 @@
+newmtl floor
+  illum 2
+  Kd 0.2 0.2 0.2
+  Ks 0.04 0.04 0.04
+  Ns 1e+06
+  map_Kd grid.png
+
+newmtl light
+  illum 2
+  Ke 100 100 100
+  Kd 0.5 0.5 0.5
+  Ks 0.04 0.04 0.04
+  Ns 1e+06
+
+newmtl quad1
+  illum 2
+  Kd 1 1 1
+  Ks 0.04 0.04 0.04
+  Ns 2e+08
+  map_Kd colored.png
+
+newmtl quad2
+  illum 2
+  Kd 1 1 1
+  Ks 0.04 0.04 0.04
+  Ns 2e+08
+  map_Kd colored.png
+

@@ -1,0 +1,10 @@
+bin/
+build/
+cmake/
+out/
+xcode/
+
+.clang-format
+.gdb_history
+gdb.sh
+xcode.sh
