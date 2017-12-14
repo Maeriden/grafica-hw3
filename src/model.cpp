@@ -58,7 +58,7 @@ facet_normals(shape* shp)
 		norms.push_back(norm);
 		norms.push_back(norm);
 		
-		tris.push_back(vec3f{3*i + 0, 3*i + 1, 3*i + 2});
+		tris.push_back(vec3i{3*i + 0, 3*i + 1, 3*i + 2});
 	}
 	
 	std::swap(shp->pos,       poss);
