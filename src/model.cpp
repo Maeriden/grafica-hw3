@@ -153,9 +153,9 @@ make_quad(const std::string& name, int usteps, int vsteps, float r)
 		{
 			float u = (float)x / usteps;
 			float v = (float)y / vsteps;
-			vec3f pos      = r * vec3f{-u*2+1, -v*2+1};
+			vec3f pos      = r * vec3f{u*2.0f - 1.0f, v*2.0f - 1.0f, 0.0f};
 			vec3f norm     = {0, 0, 1};
-			vec2f texcoord = {1.0f - u, 1.0f - v};
+			vec2f texcoord = {u, v};
 			
 			mesh->pos.push_back(pos);
 			mesh->norm.push_back(norm);
