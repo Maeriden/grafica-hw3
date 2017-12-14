@@ -197,9 +197,9 @@ make_sphere(const std::string& name, int usteps, int vsteps, float r)
 			float phi   = 2.0f * pif * u;
 			float theta = pif * v;
 			
-			vec3f pos      = r * vec3f{sinf(theta) * cosf(phi), sinf(theta) * sinf(phi), cosf(theta)};
+			vec3f pos      = r * vec3f{sinf(theta)*cosf(phi), sinf(theta)*sinf(phi), cosf(theta)};
 			vec3f norm     = normalize(pos);
-			vec2f texcoord = {u, 1.0f - v};
+			vec2f texcoord = {u, 1.0f-v};
 			
 			mesh->pos.push_back(pos);
 			mesh->norm.push_back(norm);
